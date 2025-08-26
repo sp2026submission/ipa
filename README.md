@@ -4,15 +4,9 @@
 
 First, clone this repo. If you have the [GitHub CLI](https://cli.github.com/manual/installation) installed:
 
-```
-gh repo clone private-attribution/ipa && cd ipa
-```
 
 or just with Git:
 
-```
-git clone https://github.com/private-attribution/ipa && cd ipa
-```
 
 Check to make sure you have a recent version of Rust with
 
@@ -66,8 +60,8 @@ First, follow the instructions [here](https://docs.github.com/en/packages/workin
 
 ```
 echo $CR_PAT | docker login ghcr.io -u <USER_NAME> --password-stdin
-docker tag <IMAGE_ID> ghcr.io/private-attribution/ipa/ipa-helper:<TAG>
-docker push ghcr.io/private-attribution/ipa/ipa-helper:<TAG>
+docker tag <IMAGE_ID> .../ipa/ipa-helper:<TAG>
+docker push .../ipa/ipa-helper:<TAG>
 ```
 
 ### Running tests
